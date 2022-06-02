@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--     HEAD   -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de presupuestos</title>
+  <link rel="stylesheet" href="style/estilos.css">
+</head>
+<!--     BODY   -->
+
+<body>
+  <!--     SCRIPT INICI   -->
+  <script>
+    //Definición del array
+
+    let lesDades = [
+      ["B1L1", "Galvanizado de la estructura", "1"],
+      ["B1L2P1", "Galvanización ZM310", "2"],
+      ["B1L2P2", "Galvanización en caliente por inmersión proceso discontinuo", "2"],
+      ["B1L2P3", "Galvanización Sendzimir Z-275", "2"]
+    ];
+  </script>
+  <!--     SCRIPT FIN   -->
+
+  <h1>Presupuesto creado:
+
+    <!--     SCRIPT INICI   -->
+    <script>
+      let ara = new Date();
+      let avui = ara.getFullYear() + "/" + ara.getMonth() + "/" + ara.getDate();
+      document.write(avui);
+    </script>
+    <!--     SCRIPT FIN   -->
+  </h1>
+  <hr>
+
+  <!--     SCRIPT INICI   -->
+  <script>
+    for (i = 0; i < lesDades.length; i++) {
+      document.write('<input type="checkbox" id=' + lesDades[i][0] + ' onclick="possa(' + [i][0] + ')"><label for="' + lesDades[i][0] + '">' + lesDades[i][1] + '</label><br><hr>');
+    }
+    function possa(bloc) {
+      let cadena = "lesDades[" + bloc + "][0]";
+      let valor = eval(cadena);
+      let archivo = "blocs/" + valor + ".htm";
+      fetch(archivo)
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          let noudiv = document.createElement("div");
+          noudiv.id = "i" + valor;
+          document.body.appendChild(noudiv);
+          document.getElementById("i" + valor).innerHTML = data;
+        });
+
+    }
+  </script>
+  <!--     SCRIPT FIN   -->
+</body>
+
+</html>
