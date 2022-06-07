@@ -8,18 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Generador de presupuestos</title>
   <link rel="stylesheet" href="style/estilos.css">
+  
 </head>
 <body>
-  <script>
-    //Definición del array
-    let lesDades = [
-      ["B1L1", "Galvanizado de la estructura", "1"],
-      ["B1L2P1", "Galvanización ZM310", "2"],
-      ["B1L2P2", "Galvanización en caliente por inmersión proceso discontinuo", "2"],
-      ["B1L2P3", "Galvanización Sendzimir Z-275", "2"]
-    ];
-  </script>
-  <body>
+  <script type="application/javascript" src="/script/llistat.js"></script> 
     <h1>Presupuesto creado:
       <script>
         let ara = new Date();
@@ -28,31 +20,6 @@
       </script>
     </h1>
     <hr>
-<script>
-    for (i = 0; i < lesDades.length; i++) {
-      document.write('<input type="checkbox" id=' + lesDades[i][0] + ' onclick="possa(' + [i][0] + ')"><label for="' + lesDades[i][0] + '">' + lesDades[i][1] + '</label><br><hr>');
-    }
-    function possa(bloc) { 
-      let cadena = "lesDades[" + bloc + "][0]";
-      let valor = eval(cadena);
-      let arxiu = "blocs/" + valor + ".htm";
-      let caixa = document.getElementById(valor);
-         if(caixa.checked){
-            fetch(arxiu)
-            .then(response => {
-            return response.text()
-            })
-            .then(data => {
-            let noudiv = document.createElement("div");
-            noudiv.id = "i" + valor;
-            document.body.appendChild(noudiv);
-            document.getElementById("i" + valor).innerHTML = data;
-            })
-         }else{       
-          aborrar = document.getElementById("i" + valor);
-          document.body.removeChild(aborrar);
-          }
-      }
-</script>
+    <script type="application/javascript" src="/script/motor.js"></script> 
 </body>
 </html>
