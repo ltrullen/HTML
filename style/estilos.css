@@ -1,5 +1,11 @@
 <!--
 <!--
+@media print {
+	/* styling goes here */
+	.example {
+	  display: none;
+	}
+ 
  /* Font Definitions */
  @font-face
 	{font-family:Wingdings;
@@ -42,9 +48,9 @@
 	font-size:11.0pt;
 	font-family:"Segoe UI Emoji",sans-serif;}
 h1
-	{mso-style-link:"T�tulo 1 Car";
+	{mso-style-link:"Título 1 Car";
 	margin-top:24.0pt;
-	margin-right:0cm;
+	margin-right:1cm;
 	margin-bottom:0cm;
 	margin-left:0cm;
 	text-align:left;
@@ -56,9 +62,9 @@ h1
 	color:white;
 	font-weight:bold;}
 h2
-	{mso-style-link:"T�tulo 2 Car";
+	{mso-style-link:"Título 2 Car";
 	margin-top:2.0pt;
-	margin-right:0cm;
+	margin-right:1cm;
 	margin-bottom:12.0pt;
 	margin-left:0cm;
 	text-align:left;
@@ -70,9 +76,9 @@ h2
 	color:white;
 	font-weight:normal;}
 h3
-	{mso-style-link:"T�tulo 3 Car";
+	{mso-style-link:"Título 3 Car";
 	margin-top:2.0pt;
-	margin-right:0cm;
+	margin-right:1cm;
 	margin-bottom:12.0pt;
 	margin-left:0cm;
 	text-align:left;
@@ -86,9 +92,9 @@ h3
 	color:#243F60;
 	font-weight:bold;}
 h4
-	{mso-style-link:"T�tulo 4 Car";
+	{mso-style-link:"Título 4 Car";
 	margin-top:2.0pt;
-	margin-right:0cm;
+	margin-right:1cm;
 	margin-bottom:12.0pt;
 	margin-left:0cm;
 	text-align:justify;
@@ -102,9 +108,9 @@ h4
 	color:#365F91;
 	font-weight:bold;}
 h5
-	{mso-style-link:"T�tulo 5 Car";
+	{mso-style-link:"Título 5 Car";
 	margin-top:12.0pt;
-	margin-right:0cm;
+	margin-right:1cm;
 	margin-bottom:12.0pt;
 	margin-left:0cm;
 	text-align:justify;
@@ -117,9 +123,9 @@ h5
 	font-family:"Segoe UI Emoji",sans-serif;
 	font-weight:bold;}
 h6
-	{mso-style-link:"T�tulo 6 Car";
+	{mso-style-link:"Título 6 Car";
 	margin-top:2.0pt;
-	margin-right:0cm;
+	margin-right:1cm;
 	margin-bottom:0cm;
 	margin-left:0cm;
 	text-align:justify;
@@ -138,15 +144,15 @@ p.MsoHeader, li.MsoHeader, div.MsoHeader
 	font-size:11.0pt;
 	font-family:"Segoe UI Emoji",sans-serif;}
 p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{mso-style-link:"Pie de p�gina Car";
-	margin:0cm;
+	{mso-style-link:"Pie de pígina Car";
+	margin:1cm;
 	text-align:justify;
 	text-autospace:none;
 	font-size:11.0pt;
 	font-family:"Segoe UI Emoji",sans-serif;}
 p.MsoCaption, li.MsoCaption, div.MsoCaption
 	{margin-top:6.0pt;
-	margin-right:0cm;
+	margin-right:1cm;
 	margin-bottom:6.0pt;
 	margin-left:0cm;
 	text-align:justify;
@@ -159,7 +165,7 @@ span.MsoPageNumber
 p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
 	{mso-style-link:"Texto independiente Car";
 	margin-top:0cm;
-	margin-right:0cm;
+	margin-right:1cm;
 	margin-bottom:6.0pt;
 	margin-left:0cm;
 	text-align:justify;
@@ -191,7 +197,7 @@ p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
 	font-size:11.0pt;
 	font-family:"Courier New";}
 p
-	{margin-right:0cm;
+	{margin-right:1cm;
 	margin-left:0cm;
 	text-align:justify;
 	font-size:11.0pt;
@@ -205,30 +211,30 @@ p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
 	font-family:"Tahoma",sans-serif;}
 p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
 	{margin-top:0cm;
-	margin-right:0cm;
+	margin-right:1cm;
 	margin-bottom:0cm;
 	margin-left:35.4pt;
 	text-align:justify;
 	text-autospace:none;
 	font-size:11.0pt;
 	font-family:"Segoe UI Emoji",sans-serif;}
-span.Ttulo1Car
-	{mso-style-name:"T�tulo 1 Car";
-	mso-style-link:"T�tulo 1";
+span.Título1Car
+	{mso-style-name:"Título 1 Car";
+	mso-style-link:"Título 1";
 	font-family:"Cambria",serif;
 	color:white;
 	background:#215868;
 	font-weight:bold;}
-span.Ttulo3Car
-	{mso-style-name:"T�tulo 3 Car";
-	mso-style-link:"T�tulo 3";
+span.Título3Car
+	{mso-style-name:"Título 3 Car";
+	mso-style-link:"Título 3";
 	font-family:"Century Gothic",sans-serif;
 	color:#243F60;
 	background:#DAEEF3;
 	font-weight:bold;}
-span.Ttulo5Car
-	{mso-style-name:"T�tulo 5 Car";
-	mso-style-link:"T�tulo 5";
+span.Título5Car
+	{mso-style-name:"Título 5 Car";
+	mso-style-link:"Título 5";
 	font-family:"Calibri",sans-serif;
 	font-weight:bold;}
 span.TextosinformatoCar
@@ -247,8 +253,8 @@ span.EncabezadoCar
 	mso-style-link:Encabezado;
 	font-family:"Times New Roman",serif;}
 span.PiedepginaCar
-	{mso-style-name:"Pie de p�gina Car";
-	mso-style-link:"Pie de p�gina";
+	{mso-style-name:"Pie de pígina Car";
+	mso-style-link:"Pie de pígina";
 	font-family:"Times New Roman",serif;}
 span.hps
 	{mso-style-name:hps;}
@@ -293,28 +299,28 @@ span.TextodegloboCar
 	{mso-style-name:"Texto de globo Car";
 	mso-style-link:"Texto de globo";
 	font-family:"Tahoma",sans-serif;}
-span.Ttulo2Car
-	{mso-style-name:"T�tulo 2 Car";
-	mso-style-link:"T�tulo 2";
+span.Título2Car
+	{mso-style-name:"Título 2 Car";
+	mso-style-link:"Título 2";
 	font-family:"Century Gothic",sans-serif;
 	color:white;
 	background:#31849B;}
-span.Ttulo4Car
-	{mso-style-name:"T�tulo 4 Car";
-	mso-style-link:"T�tulo 4";
+span.Título4Car
+	{mso-style-name:"Título 4 Car";
+	mso-style-link:"Título 4";
 	font-family:"Century Gothic",sans-serif;
 	color:#365F91;
 	background:#F2F2F2;
 	font-weight:bold;}
-span.Ttulo6Car
-	{mso-style-name:"T�tulo 6 Car";
-	mso-style-link:"T�tulo 6";
+span.Título6Car
+	{mso-style-name:"Título 6 Car";
+	mso-style-link:"Título 6";
 	font-family:"Century Gothic",sans-serif;}
 .MsoChpDefault
 	{font-size:10.0pt;
 	font-family:"Calibri",sans-serif;}
  /* Page Definitions */
- @page WordSection1
+/* @page WordSection1
 	{size:595.3pt 841.9pt;
 	margin:72.0pt 54.0pt 72.0pt 54.0pt;}
 div.WordSection1
@@ -324,4 +330,6 @@ div.WordSection1
 	{margin-bottom:0cm;}
 ul
 	{margin-bottom:0cm;}
+
+	  }
 -->
