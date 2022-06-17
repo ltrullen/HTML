@@ -1,10 +1,6 @@
 <!--
 <!--
-@media print {
-	/* styling goes here */
-	.example {
-	  display: none;
-	}
+@import url("impresora.css") print and (orientation: portrait);
  
  /* Font Definitions */
  @font-face
@@ -331,5 +327,5 @@ div.WordSection1
 ul
 	{margin-bottom:0cm;}
 
-	  }
+	  
 -->
