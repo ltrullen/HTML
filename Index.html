@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--     HEAD   -->
+  <!--     HEAD   -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=yes">
-   <title>Generador de presupuestos</title>
-  <link rel="stylesheet" href="style/estilos.css">
-  
-</head>
-<body>
-  <script type="application/javascript" src="script/llistat.js"></script> 
-    <h1>Presupuesto creado:
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=yes"
+    />
+    <title>Generador de presupuestos V3</title>
+    <link rel="stylesheet" href="style/estilos.css" />
+  </head>
+  <body>
+    <div class="noprint">
+      <script type="application/javascript" src="script/llistat.js"></script>
+      <button onclick="display()">Imprimir</button>
       <script>
-        let ara = new Date();
-        let avui = ara.getFullYear() + "/" + ara.getMonth() + "/" + ara.getDate();
-        document.write(avui);
+        function display() {
+          window.print();
+        }
       </script>
-    </h1>
-    <hr>
-    <script type="application/javascript" src="script/motor.js"></script> 
-</body>
+      <div>
+        <h1>
+          Presupuesto creado:
+          <script>
+            let ara = new Date();
+            let avui =
+              ara.getFullYear() + "/" + ara.getMonth() + "/" + ara.getDate();
+            document.write(avui);
+          </script>
+        </h1>
+        <hr />
+      </div>
+      <script type="application/javascript" src="script/motor.js"></script>
+    </div>
+  </body>
 </html>

@@ -3,5 +3,5 @@
       ["B1L2P1", "Galvanización ZM310", "2"],
       ["B1L2P2", "Galvanización en caliente por inmersión proceso discontinuo", "2"],
       ["B1L2P3", "Galvanización Sendzimir Z-275", "2"],
-      ["CURVO", "Curvo", "1"],
+      ["B2L1", "Tipos de puertas", "1"],
     ];
