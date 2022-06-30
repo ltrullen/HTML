@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--     HEAD   -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=yes"
+    />
+    <title>Generador de presupuestos V3</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/estilos.css" />
+  </head>
+  <body>
+    <div class="noprint">
+      <script type="application/javascript" src="script/llistat.js"></script>
+      <button onclick="display()">Imprimir</button>
+      <script>
+        function display() {
+          window.print();
+        }
+      </script>
+      <div>
+        <h1>
+          Presupuesto creado:
+          <script>
+            let ara = new Date();
+            let avui =
+              ara.getFullYear() + "/" + ara.getMonth() + "/" + ara.getDate();
+            document.write(avui);
+          </script>
+        </h1>
+        <hr />
+      </div>
+      <script type="application/javascript" src="script/motorv2.js"></script>
+    </div>
+    <button onclick="genera()">Generar</button>
+  </body>
+</html>
