@@ -31,7 +31,10 @@ for (i = 0; i < lesDades.length; i++) {
       finnivell
   );
 }
-function genera() {
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function genera() {
   for (i = 0; i < lesDades.length; i++) {
     let cadena = "lesDades[i][0]";
     let valor = eval(cadena);
@@ -52,6 +55,7 @@ function genera() {
           document.body.appendChild(noudiv);
           document.getElementById("i" + valor).innerHTML = data;
         });
+      await sleep(1000);
     } else {
       aborrar = document.getElementById("i" + valor);
       if (aborrar != null) {
